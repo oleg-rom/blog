@@ -1,0 +1,28 @@
+---
+import '../styles/global.css';
+
+const { title = "Simple Astro"} = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | Simple Astro</title>
+    <script type="module" src="/node_modules/preline/dist/preline.js"></script>
+	</head>
+	<body>
+		<slot />
+
+    <!-- ✅ Preline JS for dropdowns, navbar, etc. -->
+    <script is:global>
+      document.addEventListener('DOMContentLoaded', function () {
+        window.HSStaticMethods?.autoInit?.();
+      });
+    </script>
+    
+	</body>
+</html>
+
