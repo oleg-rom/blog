@@ -1,0 +1,193 @@
+<!-- ========== HEADER ========== -->
+<header class="flex flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full py-7">
+  <nav
+    class="relative max-w-7xl w-full flex flex-wrap lg:grid lg:grid-cols-12 basis-full items-center px-4 md:px-6 lg:px-8 mx-auto">
+    <div class="lg:col-span-3 flex items-center">
+      <!-- Logo -->
+      <a
+        class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80"
+        href="/"
+        aria-label="Preline">
+        <img src="/images/sozo-academy.png" alt="Site Logo" class="w-auto h-10" />
+      </a>
+      <!-- End Logo -->
+
+      <div class="ms-1 sm:ms-2"></div>
+    </div>
+
+    <!-- Button Group -->
+    <div
+      class="flex items-center gap-x-1 lg:gap-x-2 ms-auto py-1 lg:ps-6 lg:order-3 lg:col-span-3">
+      <!-- <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium text-nowrap rounded-xl bg-white border border-gray-200 text-black hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:hover:bg-white/10 dark:text-white dark:hover:text-white dark:focus:text-white">
+        Sign in
+      </button> -->
+      <button
+        type="button"
+        class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-medium text-nowrap rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 transition disabled:opacity-50 disabled:pointer-events-none cursor-pointer">
+        Записаться
+      </button>
+
+      <div class="lg:hidden">
+        <button
+          type="button"
+          class="ms-3 hs-collapse-toggle size-9.5 flex justify-center items-center text-sm font-semibold rounded-xl border border-gray-200 text-black hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+          id="hs-navbar-hcail-collapse"
+          aria-expanded="false"
+          aria-controls="hs-navbar-hcail"
+          aria-label="Toggle navigation"
+          data-hs-collapse="#hs-navbar-hcail">
+          <svg
+            class="hs-collapse-open:hidden shrink-0 size-4"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            ><line x1="3" x2="21" y1="6" y2="6"></line><line
+              x1="3"
+              x2="21"
+              y1="12"
+              y2="12"></line><line x1="3" x2="21" y1="18" y2="18"></line></svg
+          >
+          <svg
+            class="hs-collapse-open:block hidden shrink-0 size-4"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            ><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg
+          >
+        </button>
+      </div>
+    </div>
+    <!-- End Button Group -->
+
+    <!-- Collapse -->
+    <div
+      id="hs-navbar-hcail"
+      class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:block lg:w-auto lg:basis-auto lg:order-2 lg:col-span-6"
+      aria-labelledby="hs-navbar-hcail-collapse">
+      <div
+        class="flex flex-col gap-y-4 gap-x-0 mt-5 lg:flex-row lg:justify-center lg:items-center lg:gap-y-0 lg:gap-x-7 lg:mt-0">
+        <div
+          class="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1">
+          <a
+            class="p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+            href="/"
+            aria-current="page">
+            <svg
+              class="shrink-0 size-4 me-3 md:me-2 block md:hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path
+                d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+              ></path></svg>
+            Главная
+          </a>
+          <!-- Dropdown -->
+          <div
+            class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--adaptive:adaptive] [--is-collapse:true] md:[--is-collapse:false]">
+            <button
+              id="hs-header-base-dropdown"
+              type="button"
+              class="hs-dropdown-toggle w-full p-3 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              aria-label="Dropdown">
+              <svg
+                class="shrink-0 size-4 me-3 md:me-2 block md:hidden"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                ><path d="m3 10 2.5-2.5L3 5"></path><path d="m3 19 2.5-2.5L3 14"
+                ></path><path d="M10 6h11"></path><path d="M10 12h11"></path><path
+                  d="M10 18h11"></path></svg
+              >
+              Курсы
+              <svg
+                class="hs-dropdown-open:-rotate-180 md:hs-dropdown-open:rotate-0 duration-300 shrink-0 size-4 ms-auto md:ms-1"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg
+              >
+            </button>
+
+            <div
+              class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 relative w-full md:w-52 hidden z-10 top-full ps-7 md:ps-0 md:bg-white md:rounded-lg md:shadow-md before:absolute before:-top-4 before:start-0 before:w-full before:h-5 md:after:hidden after:absolute after:top-1 after:start-4.5 after:w-0.5 after:h-[calc(100%-4px)] after:bg-gray-100 dark:md:bg-neutral-800 dark:after:bg-neutral-700"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="hs-header-base-dropdown">
+              <div class="py-1 md:px-1 space-y-0.5">
+                <a
+                  class="p-2 md:px-2 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300"
+                  href="#">
+                  Базовое СОЗО
+                </a>
+                <a
+                  class="p-2 md:px-2 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300"
+                  href="#">
+                  Расширенное СОЗО
+                </a>
+
+                <a
+                  class="p-2 md:px-2 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300"
+                  href="#">
+                  Другие курсы
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- End Dropdown -->
+          <div>
+            <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" href="#">
+              <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Интернатура
+            </a>
+          </div>
+          <div>
+            <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" href="#">
+              <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Личная сессия
+            </a>
+          </div>
+          <div>
+            <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" href="#">
+              <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Контакты
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End Collapse -->
+    </div>
+  </nav>
+  <!-- ========== END HEADER ========== -->
+</header>
