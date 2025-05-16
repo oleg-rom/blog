@@ -1,7 +1,8 @@
 @import "tailwindcss";
-/* @plugin "daisyui"; */
-/* Preline UI */
 @import "preline/variants.css";
+@plugin "flyonui";
+@import "flyonui/variants.css"
+
 
 
 
