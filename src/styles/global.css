@@ -1,7 +1,14 @@
 @import "tailwindcss";
 @import "preline/variants.css";
-@plugin "flyonui";
-@import "flyonui/variants.css"
+
+:root {
+  --color-accent: #4F46E5;
+  --color-highlight: #FBBF24;
+  --color-bg-light: #F9FAFB;
+  --color-bg-dark: #1E293B;
+  --color-text: #1F2937;
+  --color-subtext: #6B7280;
+}
 
 
 

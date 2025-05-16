@@ -1,47 +1,86 @@
+---
+import { Picture } from "astro:assets";
+import heroImage from "../images/sozo-hero-large.webp";
+---
+
 <!-- Hero Section -->
-<section class="relative min-h-[70vh] md:min-h-[90vh] overflow-hidden">
-  <picture class="absolute inset-0 z-0 w-full h-full">
-    <source srcset="/images/sozo-hero-large.webp" media="(min-width: 1024px)">
-    <source srcset="/images/sozo-hero-medium.webp" media="(min-width: 640px)">
-    <source srcset="/images/sozo-hero-medium.webp" media="(min-width: 320px)">
-    <img src="/images/sozo-hero-mobile.jpg" alt="Sozo Hero Background" class="w-full h-full object-cover">
-  </picture>
-  <div class="absolute inset-0 bg-white/80"></div>
-  <div class="relative z-10 max-w-screen-xl mx-auto px-6 py-24 text-center">
-    <h1 class="text-4xl font-bold text-gray-900 md:text-6xl">Свобода. Исцеление. Преображение.</h1>
-    <p class="mt-6 text-lg text-gray-700">Обучение и личные сессии Bethel Sozo — онлайн, с сертифицированными служителями.</p>
-    <div class="mt-8 flex justify-center gap-4">
-      <a href="/courses" class="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">Начать обучение</a>
-      <a href="/sessions" class="px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50">Записаться на сессию</a>
-    </div>
+<div class="relative z-10 max-w-screen-xl mx-auto px-6 py-24 text-center">
+  <h1 class="text-5xl font-bold text-gray-900 md:text-6xl">
+    Спасен. <span class="text-[color:var(--color-accent)]">Исцелен.</span> Освобожден.
+  </h1>
+  <div class="mx-auto px-4 max-w-prose text-gray-800 text-lg leading-relaxed">
+    <p class="mt-6 text-2xl  text-gray-600">
+      Обучение и личные сессии <span class="font-bold">Bethel Sozo</span> — онлайн, с&nbsp;сертифицированными служителями.
+    </p>
+
   </div>
-</section>
+  <div class="mt-8 flex justify-center gap-4 flex-col md:flex-row">
+    <a
+      href="/courses"
+      class="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700"
+      >Начать обучение</a
+    >
+    <a
+      href="/sessions"
+      class="px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50"
+      >Записаться на сессию</a
+    >
+  </div>
+</div>
+<div>
+  <Picture
+    class="block mx-auto sm:w-[80%] md:w-[70%] lg:w-[70%] h-auto rounded-2xl object-cover"
+    src={heroImage}
+    formats={["avif", "webp"]}
+    sizes="100vw"
+    widths={[320, 640, 900, 1200, 1600]}
+    alt="A church in the mountain valley"
+  />
+</div>
+<!-- End of Hero Section -->
 
 <!-- What is Sozo Section -->
 <section class="bg-white py-20">
   <div class="max-w-screen-md mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-gray-900 mb-6">Что такое Sozo?</h2>
-    <p class="text-gray-700 text-lg">Sozo — это не консультирование, а мягкое и мощное служение внутреннего исцеления и освобождения. Цель — выявить и устранить корни, мешающие вашему личному росту и отношениям с Богом и другими людьми.</p>
+    <h2 class="text-4xl font-bold text-gray-900 mb-6">Что такое Sozo?</h2>
+    <p class="text-gray-700 text-lg">
+      Sozo — это не консультирование, а мягкое и мощное служение внутреннего исцеления и
+      освобождения. Цель — выявить и устранить корни, мешающие вашему личному росту и отношениям с
+      Богом и другими людьми.
+    </p>
   </div>
 </section>
 
 <!-- Courses Section -->
 <section class="bg-gray-50 py-20">
   <div class="max-w-screen-xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-gray-900 mb-6">Курсы Sozo</h2>
-    <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Изучите инструменты внутреннего исцеления и научитесь проводить Sozo-сессии самостоятельно — под руководством опытных наставников.</p>
+    <h2 class="text-4xl font-bold text-gray-900 mb-6">Курсы Sozo</h2>
+    <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
+      Изучите инструменты внутреннего исцеления и научитесь проводить Sozo-сессии самостоятельно —
+      под руководством опытных наставников.
+    </p>
 
     <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
       <div class="bg-white shadow-md rounded-lg p-6 text-left">
         <h3 class="text-xl font-semibold text-gray-900">Базовый Sozo</h3>
-        <p class="mt-4 text-gray-700">Фундаментальный курс: философия Sozo, структура сессий и основные инструменты (Лестница Отца, 4 Двери, Стена, Представление Иисуса).</p>
-        <a href="/courses/basic" class="mt-4 inline-block text-indigo-600 hover:underline">Подробнее →</a>
+        <p class="mt-4 text-gray-700">
+          Фундаментальный курс: философия Sozo, структура сессий и основные инструменты (Лестница
+          Отца, 4 Двери, Стена, Представление Иисуса).
+        </p>
+        <a href="/courses/basic" class="mt-4 inline-block text-indigo-600 hover:underline"
+          >Подробнее →</a
+        >
       </div>
 
       <div class="bg-white shadow-md rounded-lg p-6 text-left">
         <h3 class="text-xl font-semibold text-gray-900">Продвинутый Sozo</h3>
-        <p class="mt-4 text-gray-700">Углубленное обучение: работа с телом, травмы, знакомые духи и пророческое освобождение. Для тех, кто прошёл базу.</p>
-        <a href="/courses/advanced" class="mt-4 inline-block text-indigo-600 hover:underline">Подробнее →</a>
+        <p class="mt-4 text-gray-700">
+          Углубленное обучение: работа с телом, травмы, знакомые духи и пророческое освобождение.
+          Для тех, кто прошёл базу.
+        </p>
+        <a href="/courses/advanced" class="mt-4 inline-block text-indigo-600 hover:underline"
+          >Подробнее →</a
+        >
       </div>
     </div>
   </div>
@@ -50,9 +89,16 @@
 <!-- Sozo Sessions Section -->
 <section class="bg-white py-20">
   <div class="max-w-screen-xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-gray-900 mb-6">Личная Sozo-сессия</h2>
-    <p class="text-gray-700 text-lg max-w-2xl mx-auto">Переживите мягкое и эффективное внутреннее исцеление, восстанавливая связь с Богом в областях боли. Каждая сессия уникальна и проводится в партнерстве с Духом Святым.</p>
-    <a href="/sessions" class="mt-6 inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">Записаться на сессию</a>
+    <h2 class="text-4xl font-bold text-gray-900 mb-6">Личная Sozo-сессия</h2>
+    <p class="text-gray-700 text-lg max-w-2xl mx-auto">
+      Переживите мягкое и эффективное внутреннее исцеление, восстанавливая связь с Богом в областях
+      боли. Каждая сессия уникальна и проводится в партнерстве с Духом Святым.
+    </p>
+    <a
+      href="/sessions"
+      class="mt-6 inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700"
+      >Записаться на сессию</a
+    >
   </div>
 </section>
 
@@ -62,15 +108,22 @@
     <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Истории преображения</h2>
     <div class="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <div class="bg-white p-6 rounded-lg shadow">
-        <p class="text-gray-700 italic">“Во время сессии я ощутила, как уходит тяжесть, которую носила годами. Это было настоящее прикосновение Бога.”</p>
+        <p class="text-gray-700 italic">
+          “Во время сессии я ощутила, как уходит тяжесть, которую носила годами. Это было настоящее
+          прикосновение Бога.”
+        </p>
         <p class="mt-4 font-semibold text-gray-900">— Наталья, Германия</p>
       </div>
       <div class="bg-white p-6 rounded-lg shadow">
-        <p class="text-gray-700 italic">“Sozo помогло мне восстановить связь с Отцом. Я получил ответы, которых искал всю жизнь.”</p>
+        <p class="text-gray-700 italic">
+          “Sozo помогло мне восстановить связь с Отцом. Я получил ответы, которых искал всю жизнь.”
+        </p>
         <p class="mt-4 font-semibold text-gray-900">— Сергей, Латвия</p>
       </div>
       <div class="bg-white p-6 rounded-lg shadow">
-        <p class="text-gray-700 italic">“Теперь я использую эти инструменты в служении другим. Это настоящее благословение!”</p>
+        <p class="text-gray-700 italic">
+          “Теперь я использую эти инструменты в служении другим. Это настоящее благословение!”
+        </p>
         <p class="mt-4 font-semibold text-gray-900">— Елена, Польша</p>
       </div>
     </div>
@@ -81,8 +134,14 @@
 <section class="bg-indigo-600 py-20">
   <div class="max-w-screen-md mx-auto px-6 text-center">
     <h2 class="text-3xl font-bold text-white mb-6">Готовы начать?</h2>
-    <p class="text-indigo-100 text-lg mb-8">Сделайте первый шаг к свободе и внутреннему исцелению. Присоединяйтесь к Sozo Academy сегодня.</p>
-    <a href="/courses" class="px-6 py-3 bg-white text-indigo-600 font-semibold rounded-lg shadow hover:bg-indigo-100">Начать обучение</a>
+    <p class="text-indigo-100 text-lg mb-8">
+      Сделайте первый шаг к свободе и внутреннему исцелению. Присоединяйтесь к Sozo Academy сегодня.
+    </p>
+    <a
+      href="/courses"
+      class="px-6 py-3 bg-white text-indigo-600 font-semibold rounded-lg shadow hover:bg-indigo-100"
+      >Начать обучение</a
+    >
   </div>
 </section>
 
@@ -90,8 +149,16 @@
 <section class="bg-white py-20">
   <div class="max-w-screen-md mx-auto px-6 text-center">
     <h2 class="text-3xl font-bold text-gray-900 mb-6">Присоединяйтесь к сообществу</h2>
-    <p class="text-gray-700 text-lg mb-6">Следите за новостями и укрепляйтесь в своем пути через нашу Facebook-группу. Поддержка, свидетельства, обновления курсов и живое общение ждут вас.</p>
-    <a href="https://www.facebook.com/groups/sozoacademy" target="_blank" class="inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">Присоединиться в Facebook</a>
+    <p class="text-gray-700 text-lg mb-6">
+      Следите за новостями и укрепляйтесь в своем пути через нашу Facebook-группу. Поддержка,
+      свидетельства, обновления курсов и живое общение ждут вас.
+    </p>
+    <a
+      href="https://www.facebook.com/groups/sozoacademy"
+      target="_blank"
+      class="inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700"
+      >Присоединиться в Facebook</a
+    >
   </div>
 </section>
 
@@ -99,18 +166,41 @@
 <section class="bg-gray-50 py-20">
   <div class="max-w-screen-md mx-auto px-6 text-center">
     <h2 class="text-3xl font-bold text-gray-900 mb-6">Свяжитесь с нами</h2>
-    <p class="text-gray-700 text-lg mb-6">Остались вопросы? Напишите нам, и мы с радостью поможем.</p>
+    <p class="text-gray-700 text-lg mb-6">
+      Остались вопросы? Напишите нам, и мы с радостью поможем.
+    </p>
     <form action="/contact" method="POST" class="space-y-4">
       <div>
-        <input type="text" name="name" placeholder="Ваше имя" required class="w-full px-4 py-3 border border-gray-300 rounded-lg">
+        <input
+          type="text"
+          name="name"
+          placeholder="Ваше имя"
+          required
+          class="w-full px-4 py-3 border border-gray-300 rounded-lg"
+        />
       </div>
       <div>
-        <input type="email" name="email" placeholder="Email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg">
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+          class="w-full px-4 py-3 border border-gray-300 rounded-lg"
+        />
       </div>
       <div>
-        <textarea name="message" rows="4" placeholder="Сообщение" required class="w-full px-4 py-3 border border-gray-300 rounded-lg"></textarea>
+        <textarea
+          name="message"
+          rows="4"
+          placeholder="Сообщение"
+          required
+          class="w-full px-4 py-3 border border-gray-300 rounded-lg"></textarea>
       </div>
-      <button type="submit" class="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">Отправить</button>
+      <button
+        type="submit"
+        class="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700"
+        >Отправить</button
+      >
     </form>
   </div>
 </section>
